@@ -1,9 +1,11 @@
-a {
-  color: #333;
-  text-decoration: none;
+.hide {
+  display: none;
 }
 
-/* Active route */
-.active {
-  color: #8a4baf;
+.show {
+  display: block;
+}
+
+a {
+  text-decoration: none;
 }
