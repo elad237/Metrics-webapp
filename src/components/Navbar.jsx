@@ -1,19 +1,16 @@
 import { NavLink } from 'react-router-dom';
-import './Navbar.scss';
-import { BsPatchQuestionFill, BsFillHouseDoorFill } from 'react-icons/bs';
 
 const Navbar = () => {
   const links = [
-    { path: '/', text: <BsFillHouseDoorFill />, key: 1 },
-    { path: '/', text: 'Market Cap', key: 2 },
-    { path: 'about', text: <BsPatchQuestionFill />, key: 3 },
+    { path: '/', text: 'Home' },
+    { path: 'about', text: 'About' },
   ];
 
   return (
     <nav>
       <ul>
         {links.map((link) => (
-          <li key={link.key}>
+          <li key={link.text}>
             <NavLink to={link.path}>{link.text}</NavLink>
           </li>
         ))}
