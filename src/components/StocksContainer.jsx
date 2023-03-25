@@ -68,12 +68,7 @@ const StocksContainer = () => {
             <div className="bottomHalf">
               {stock.symbol}
               <br />
-              {stock.marketCap.toLocaleString('en-US', {
-                style: 'currency',
-                currency: 'USD',
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0,
-              })}
+             
             </div>
           </NavLink>
         </span>
