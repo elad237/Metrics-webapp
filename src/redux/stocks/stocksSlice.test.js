@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import configureStore from 'redux-mock-store';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -41,6 +41,5 @@ describe('Stocks redux state tests', () => {
         </BrowserRouter>
       </Provider>,
     );
-    
   });
 });
